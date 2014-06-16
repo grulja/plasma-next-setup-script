@@ -64,7 +64,7 @@ fi
 
 # Makes kcheckpass work
 if [ ! -f /etc/pam.d/kde ]; then
-    sudo install -m455 -p -D /etc/pam.d/kde
+    sudo install -m455 -p -D kde /etc/pam.d/kde
 fi
 
 # Fix startkde being stupid and broken

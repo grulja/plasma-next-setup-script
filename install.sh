@@ -3,7 +3,7 @@
 # Install build dependencies
 # NOTE: Qt 5.3 is required for PLASMA_NEXT
 echo "Installing build dependencies ..."
-sudo yum -q -y install oxygen-fonts* polkit-devel qt5* qimageblitz-devel libbsd-devel libICE-devel lm_sensors-devel mesa-libGL-devel mesa-libEGL-devel pciutils-devel libraw1394-devel gpsd-devel pam-devel mesa-libGLES-devel boost-devel libXau-devel libXdmcp-devel libXdamage-devel libXfixes-devel\
+sudo yum -q -y install xapian-core-devel xapian oxygen-fonts* polkit-devel qt5* qimageblitz-devel libbsd-devel libICE-devel lm_sensors-devel mesa-libGL-devel mesa-libEGL-devel pciutils-devel libraw1394-devel gpsd-devel pam-devel mesa-libGLES-devel boost-devel libXau-devel libXdmcp-devel libXdamage-devel libXfixes-devel\
 libXcursor-devel libXcomposite-devel libusb-devel fontconfig-devel libxkbfile-devel xcb-util-keysyms-devel xcb-util-image-devel xcb-util-renderutil-devel xcb-util-wm-devel xcb-util-devel libxkbcommon-devel phonon-qt5-devel NetworkManager-devel NetworkManager-glib-devel openconnect-devel ModemManager-devel\
 libupnp-devel libXrandr-devel libxslt-devel gettext-devel fdupes giflib-devel libjpeg-devel libpng-devel libGL-devel openssl-devel libSM-devel libXext-devel libXScrnSaver-devel docbook-dtds docbook-style-xsl libxml2-devel avahi-devel systemd-devel aspell-devel hspell-devel hunspell-devel gettext zlib-devel\
 bzip2-devel lzma-devel libX11-devel libxcb-devel jasper-devel OpenEXR-devel perl pcre-devel glib2-devel xcb-util-keysyms-devel libXrender-devel
@@ -13,7 +13,7 @@ FRAMEWORKS_TIER1='attica karchive kcodecs kconfig kcoreaddons kdbusaddons kgloba
 FRAMEWORKS_TIER2='kauth kcompletion kcrash kdnssd kdoctools ki18n kjobwidgets'
 FRAMEWORKS_TIER3='kconfigwidgets kiconthemes kservice knotifications ktextwidgets kxmlgui kbookmarks kcmutils kwallet kio kdeclarative kparts kdewebkit kinit kded kjsembed kunitconversion kdesignerplugin kpty kdesu knotifyconfig kross knewstuff kemoticons kmediaplayer kactivities plasma-framework krunner'
 FRAMEWORKS_TIER4='frameworkintegration kapidox kdelibs4support khtml'
-FRAMEWORKS_UNSTABLE='libnm-qt libmm-qt libkscreen:frameworks libksysguard'
+FRAMEWORKS_UNSTABLE='libnm-qt libmm-qt libkscreen:frameworks libksysguard kfilemetadata:frameworks baloo:frameworks'
 PLASMA_NEXT='kwin oxygen plasma-nm plasma-workspace plasma-desktop kde-baseapps:frameworks breeze systemsettings kwalletmanager:frameworks ksysguard kscreen:frameworks'
 
 PACKAGE_COLLECTIONS='FRAMEWORKS_EXTRAS FRAMEWORKS_TIER1 FRAMEWORKS_TIER2 FRAMEWORKS_TIER3 FRAMEWORKS_TIER4 FRAMEWORKS_UNSTABLE PLASMA_NEXT'
